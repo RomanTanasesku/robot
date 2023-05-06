@@ -1,0 +1,139 @@
+.robot{
+    border: 1px solid #000;
+    width: 450px;
+    height: 650px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+.antena{
+    height: 4px;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    position: fixed;
+    transition: 0.5s;
+    position: relative;
+    top: 70px;
+}
+.antena::after{
+    position: absolute;
+    content: '';
+    left: 64px;
+    transform: rotate(10deg);
+}
+.golova {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+}
+.ochi {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.glaz {
+    width: 40px;
+    height: 30px;
+    background-color: aliceblue;
+    margin: 0 10px;
+    border-radius: 12px 5px 12px 5px;
+    position: relative;
+    transition: 0.5s;
+    border: 3px solid #000;
+}
+.glaz::after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px 0 0 0;
+    background-color: black;
+}
+.glaz:hover::after{
+    background-color: aquamarine;
+    transform: scale(1.2) rotate(20deg);
+    top: 10px;
+    left: 15px;
+}
+.nis {
+    height: 30px;
+    width: 10px;
+    background-color: burlywood;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+.nis:hover{
+    transform: scale(1.5);
+    background-color: rgb(198, 132, 50);
+}
+.rot {
+    width: 50px;
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 3px 3px 10px 10px;
+    background-color: palevioletred;
+    transition: 0.5s;
+}
+.rot:hover{
+    transform: rotate(20deg);
+    width: 35px;
+    background-color: red;
+}
+.tilo {
+    display: flex;
+}
+.hands {
+    height: 120px;
+    width: 23.5px;
+    background-color: bisque;
+    border-radius: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: 0.5s;
+}
+.hands:hover{
+    transform: rotate(100deg);
+}
+.main-body {
+    height: 120px;
+    width: 105px;
+    background-color: aquamarine;
+    border-radius: 0 0 15px 15px;
+}
+.puzo{
+    height: 10px;
+    width: 100px;
+    border:  solid #000;
+    background-color: rgb(20, 202, 234);
+    border-radius: 0 0 15px 15px;
+}
+.puzo:hover{
+    transform: scale(1.2) rotate(10deg);
+    background-color: red;
+}
+.nogi {
+    display: flex;
+}
+.nogi:hover{
+    transform: rotate(-20deg) scale(1.5);
+}
+.nizki {
+    margin-top: 2px;
+    height: 90px;
+    width: 23px;
+    margin-left: 14px;
+    margin-right: 15px;
+    background-color: blue;
+    border-radius: 5px 5px 5px 5px;
+}
